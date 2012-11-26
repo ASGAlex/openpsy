@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>view-list-icons.png</file>
+        <file>view-list-tree.png</file>
+        <file>button_ok.png</file>
+        <file>cancel.png</file>
+        <file>psy.png</file>
+        <file>debug-run.png</file>
+        <file>configure.png</file>
+    </qresource>
+</RCC>

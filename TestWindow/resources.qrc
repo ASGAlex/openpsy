@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>manual.txt</file>
+        <file>back.png</file>
+        <file>foward.png</file>
+        <file>cancel.png</file>
+        <file>filenew.png</file>
+        <file>help.png</file>
+        <file>contexthelp.png</file>
+        <file>psy.png</file>
+        <file>qt.png</file>
+    </qresource>
+</RCC>
