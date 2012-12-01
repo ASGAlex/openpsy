@@ -37,10 +37,8 @@ OTHER_FILES += \
 RESOURCES += \
     resources.qrc
 
-#INCLUDEPATH += quazip quazip/quazip/zlib-1.2.7
-
-win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/quazip/quazip/release/ -lquazip
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/quazip/quazip/debug/ -lquazip
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/quazip/quazip/release/ -lquazip1
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/quazip/quazip/debug/ -lquazip1 
 else:unix: LIBS += -L$$OUT_PWD/quazip/quazip/ -lquazip
 
 INCLUDEPATH += $$PWD/quazip $$PWD/quazip/quazip/zlib-1.2.7
