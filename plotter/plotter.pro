@@ -4,16 +4,18 @@
 #
 #-------------------------------------------------
 
-QT       += core script
+QT += core script
 TARGET = plotter
 TEMPLATE = lib
 CONFIG += plugin
 
 DEFINES += PLOTTER_LIBRARY
 
-SOURCES += plotter.cpp
+SOURCES += \
+    plotter.cpp
 
-HEADERS += plotter.h\
+HEADERS += \
+    plotter.h\
     plotterinterface.h
 
 symbian {

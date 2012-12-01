@@ -7,10 +7,12 @@
 QT       += core gui webkit script scripttools
 
 TARGET = TestWindow
+
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
+SOURCES += \
+    main.cpp\
     helpdialog.cpp \
     imagedialog.cpp \
     testwindow.cpp \
@@ -24,7 +26,9 @@ HEADERS  += \
     qwebviewscriptable.h \
     buttonstate.h
 
-FORMS    += help.ui image.ui \
+FORMS += \
+    help.ui \
+    image.ui \
     testwindow.ui
 
 OTHER_FILES += \
@@ -33,21 +37,9 @@ OTHER_FILES += \
 RESOURCES += \
     resources.qrc
 
-LIBS += -L"C:\QT4DEV\psytest\TestWindow\quazip-build-desktop-Qt_4_8_1_for_Desktop_-_MinGW__Qt_SDK_________\quazip\debug" -lquazip1
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/quazip/quazip/release/ -lquazip1
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/quazip/quazip/debug/ -lquazip1 
+else:unix: LIBS += -L$$OUT_PWD/quazip/quazip/ -lquazip
 
-INCLUDEPATH += quazip-0.5/quazip/ quazip-0.5/quazip/zlib-1.2.7
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+INCLUDEPATH += $$PWD/quazip $$PWD/quazip/quazip/zlib-1.2.7
+DEPENDPATH += $$PWD/quazip/quazip
