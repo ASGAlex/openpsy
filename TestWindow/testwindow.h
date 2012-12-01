@@ -21,8 +21,8 @@
 #include "../plotter/plotterinterface.h"
 #include "buttonstate.h"
 
-#include "quazip-0.5/quazip/quazip.h"
-#include "quazip-0.5/quazip/quazipfile.h"
+#include "quazip/quazip.h"
+#include "quazip/quazipfile.h"
 
 enum TestStates {NO_TEST,NEW_STARTED,TEST_FINISHED,SHOW_PIC};
 
